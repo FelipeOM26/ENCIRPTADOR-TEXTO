@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style-Proyecto.css">
+    <title>ENCRIPTADOR</title>
+
+
+</head>
+
+
+
+
+<body>
+
+    <img id="logo4" src="imagenes/Logo.png" alt="Logo" title="Logo">
+
+    <div class="copy">
+
+        <button onclick="copy();"  class="copiarTexto">
+
+            <img src="imagenes/copiar.png" alt="copy" title="copiat texto" id="copy">
+        </button>
+    </div>
+
+
+    <div class="textoArea">
+
+        <textarea name="texto" id="texto" cols="90" rows="35" placeholder="Ingrese el texto aqui"></textarea>
+
+
+    </div>
+
+    <div id="encript" class="encriptador">
+
+
+
+        <div id="elements" class="elementos">
+            <img id="muñeco" class="img-contenedor" src="imagenes/advertencia.png" alt="Imagen de mensaje no encontrado"
+                title="imagen">
+            <div class="textos">
+                <h3 id="h3-texto" class="texto-h3">Ningun mensaje fue encontrado</h3>
+                <p id="p-texto" class="texto-abajo">Ingrese un texto</p>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="bloque2">
+
+        <div class="terminos">
+
+            <div class="exclamacion">
+                <img class="alerta" src="imagenes/alerta.png" alt="alerta" title="alerta">
+                <p id="terminos"> Solo letras minúsculas y sin acentos</p>
+            </div>
+
+
+
+        </div>
+
+        <div class="botones">
+
+            <button onclick="encriptar();" id="Encriptar"><span class="encrip">Encriptar</span></button>
+            <button onclick="desencriptar();" class="Desencriptar"><span class="encrip" >Desencriptar</span></button>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+<script src="logic.js"></script>
+
+
+
+</html>
